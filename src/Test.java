@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 public class Test {
     public static void main(String[] args) {
-        ArrayList<String> invitees = new ArrayList<String>();
+        /*ArrayList<String> invitees = new ArrayList<String>();
         invitees.add("alex.hazlin@isbasel.ch");
         invitees.add("ajhazlin@gmail.com");
         LocalDate myDate = LocalDate.parse("2020-10-14");
@@ -27,6 +27,6 @@ public class Test {
         manager.addEvent(event3);
         manager.printEventNames();
         manager.sortEvents();
-        manager.printEventNames();
+        manager.printEventNames(); */
     }
 }

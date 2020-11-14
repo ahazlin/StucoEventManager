@@ -1,19 +1,20 @@
 import javax.swing.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class StucoEvent {
     private String name;
     private LocalDate date;
-    private String address;
+    private String location;
+    private LocalDateTime time;
     private int numberOfParticipants;
     private ArrayList<String> inviteList;
 
-    public StucoEvent(String name, LocalDate date, String address, int numberOfParticipants, ArrayList<String> inviteList) {
+    public StucoEvent(String name, LocalDate date, String location, ArrayList<String> inviteList) {
         this.name = name;
         this.date = date;
-        this.address = address;
-        this.numberOfParticipants = numberOfParticipants;
+        this.location = location;
         this.inviteList = inviteList;
     }
 
@@ -21,7 +22,8 @@ public class StucoEvent {
         String res = "Event Information: \n";
         res = res + "Name: " + this.name + "\n";
         res = res + "Date: " + this.date + "\n";
-        res = res + "Address: " + this.address + "\n";
+        res = res + "Location: " + this.location + "\n";
+        res = res + "Time" + this.time + "\n";
         res = res + "Number of Participants: " + this.numberOfParticipants + "\n";
         res = res + "Invite List: ";
 
@@ -39,11 +41,16 @@ public class StucoEvent {
         return this.numberOfParticipants;
     }
 
-    public String getAddress(){
-        return this.address;
+    public String getLocation(){ return this.location;}
+
+    public String getName(){return this.name;}
+
+    public LocalDateTime gettime(){return this.time;}
+
+    public LocalDate getdate(){
+        return this.date;
     }
 
-    public String getName(){
-        return this.name;
-    }
+
+
 }
